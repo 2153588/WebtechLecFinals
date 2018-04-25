@@ -1,0 +1,4 @@
+https://wordpress.org/plugins/easy-classes/
+https://wordpress.org/plugins/kb-gradebook/
+https://wordpress.org/plugins/simple-schools-staff-directory/
+https://wordpress.org/plugins/classroom/
