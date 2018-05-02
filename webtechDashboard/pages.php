@@ -38,7 +38,7 @@ header('location: login.php');
             <li><a href="users.php">Users</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Welcome, Admin</a></li>
+            <li><a href="#"><?php echo $_SESSION['username'] ?></a></li>
             <li><a href="logout.php">Logout</a></li>
           </ul>
         </div><!--/.nav-collapse -->
