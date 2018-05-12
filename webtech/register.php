@@ -6,22 +6,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sign Up Page</title>
-<link rel="stylesheet" href="css/log/style.css">
+<link rel="stylesheet" href="css/login.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/datepicker3.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-<body style="background-color:#bdc3c7">
-	<div id="main-wrapper">
-	<center><h2>Sign Up Form</h2></center>
+<body style="background-image: url(regisbg.jpg);">
+	<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+		  <div class="login-panel panel panel-info text-center">
+		<div class="panel-heading">Sign Up Form</div>
 		<form action="register.php" method="post">
-			<div class="inner_container">
-				<input type="text" placeholder="Enter Username" name="username" required>
-				<input type="password" placeholder="Enter Password" name="password" required>
-				<input type="password" placeholder="Re-Enter Password" name="cpassword" required>
-				<button name="register" class="sign_up_btn" type="submit">Sign Up</button>
-				
-				<a href="index.php"><button type="button" class="back_btn">Back to Login</button></a>
+			<div class="panel-body">
+				<fieldset>
+					 <div class="form-group text-center">
+					 		<input class="form-control" type="text" placeholder="Enter Username" name="username" required>
+					</div>
+				<div class="form-group text-center">
+				<input class="form-control" type="password" placeholder="Enter Password" name="password" minlength="8" required>
 			</div>
-		</form>
+			<div class="form-group text-center">
+				<input class="form-control" type="password" placeholder="Re-Enter Password" name="cpassword" minlength="8" required>
+			</div>
+				<button name="register" class="btn btn-primary btn-lg" type="submit">Sign Up</button>
+				
+				<a href="index.php"><button type="button" class="btn btn-primary btn-lg">Back to Login</button></a>
+			</div>
+	</fieldset>
+</div>
+</form>
+</div>
+
 		
 		<?php
 			if(isset($_POST['register']))
@@ -49,14 +66,16 @@
 							$username = $username;
 							$password = $password;
 							$stmt->execute();
+							
 							//$query = "insert into user values('$username','$password')";
 							//$query_run = mysqli_query($con,$query);
 							if($query_run)
 							{
-								echo '<script type="text/javascript">alert("User Registered.. Welcome")</script>';
+								
 								$_SESSION['username'] = $username;
 								$_SESSION['password'] = $password;
-								header( "Location: index.php");
+								echo '<script type="text/javascript">alert("You are now Registered.. Proceed to Login")</script>';
+
 							}
 							else
 							{

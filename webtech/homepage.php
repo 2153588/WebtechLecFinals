@@ -36,8 +36,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
-
+        <a class="navbar-brand js-scroll-trigger text-success" href="#page-top">Welcome <?php echo $_SESSION['username']; ?> </a>
+           
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -59,15 +59,12 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-info text-white text-center">
       <div class="container">
-        <center><h1>Welcome <?php echo $_SESSION['username']; ?></h1></center>
-        <br><br>
-        <img class="img-fluid mb-5 d-block mx-auto" id="scis" src="img/logo.png" alt="">
-
         <h1 class="text-uppercase mb-0">WEB SYSTEMS AND TECHNOLOGIES</h1>
     <br>
-        <h4 class="font-weight-light mb-0">By: Kyrie Cerezo, Brian Daclison, Ojoj Dela Cruz,<br> Von Manaois, Jeremiah Pimentel, Von Salazar </h4>
+        <p class="font-weight-light mb-0">By: Kyrie Cerezo, Brian Daclison, Ojoj Dela Cruz,<br> Von Manaois, Jeremiah Pimentel, Von Salazar </p>
+         <img class="img-fluid mb-5 d-block mx-auto" src="img/pic.png" alt="logo">
       </div>
     </header>
 
@@ -142,7 +139,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
+    <section class="bg-dark text-white mb-0" id="about">
       <div class="container">
         <h2 class="text-center text-uppercase text-white">About</h2>
     <br>
@@ -208,7 +205,7 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Topic</a>
-               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">Take Quiz</a>
+                 <a class="btn btn-primary btn-lg rounded-pill" href="quizzer/jsp/index.php">Test your knowledge!</a>
             </div>
           </div>
         </div>
@@ -248,7 +245,7 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Topic</a>
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">Take Quiz</a>
+                <a class="btn btn-primary btn-lg rounded-pill" href="quizzer/php/index.php">Test your knowledge!</a>
             </div>
           </div>
         </div>
@@ -278,7 +275,7 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Topic</a>
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">Take Quiz</a>
+                <a class="btn btn-primary btn-lg rounded-pill" href="quizzer/ror/index.php">Test your knowledge!</a>
             </div>
           </div>
         </div>
@@ -307,7 +304,7 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Topic</a>
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">Take Quiz</a>
+                <a class="btn btn-primary btn-lg rounded-pill" href="quizzer/node/index.php">Test your knowledge!</a>
             </div>
           </div>
         </div>
@@ -342,7 +339,7 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Topic</a>
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">Take Quiz</a>
+                <a class="btn btn-primary btn-lg rounded-pill" href="quizzer/asp/index.php">Test your knowledge!</a>
             </div>
           </div>
         </div>
@@ -399,7 +396,7 @@
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Topic</a>
-                <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">Take Quiz</a>
+                <a class="btn btn-primary btn-lg rounded-pill" href="quizzer/owasp/index.php">Test your knowledge!</a>
             </div>
           </div>
         </div>
